@@ -1,0 +1,17 @@
+public class testHandler {
+
+public static void preventInsert(List<Tenant c> newlist) {
+
+Set<16> existing PropertyIds new Set<Id>();
+
+for (Tenant c existing Tenant: [SELECT id, Property FROM Tenant WHERE Property c 1 null)) ( existing PropertyIds.add(existingTenant. Property_c);
+}
+for (Tenant c newTenant newlist) {
+
+if (newTenant. Property c! null && existing PropertyIds.contains (newTenant. Property_c)) {
+
+newTenant.addError("A tenant can have only one property');
+        }
+      }
+   }
+}
