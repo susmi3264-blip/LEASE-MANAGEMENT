@@ -1,0 +1,11 @@
+trigger test on Tenant_c (before insert)
+
+{
+
+if(trigger.isInsert && trigger.isBefore){
+
+testHandler.prevent Insert (trigger.new);
+
+  }
+
+}
